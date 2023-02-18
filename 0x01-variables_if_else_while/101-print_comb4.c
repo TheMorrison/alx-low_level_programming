@@ -25,8 +25,8 @@ int main(void)
 				putchar(z + '0');
 				if (count != 119)
 				{
-					putchar(',')
-						putchar(' ')
+					putchar(',');
+					putchar(',');
 				}
 				z++;
 			}
