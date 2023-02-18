@@ -20,8 +20,8 @@ int main(void)
 			z = y + 1;
 			while (z <= 9)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
+				putchar(x + '0');
+				putchar(y + '0');
 				putchar(z + '0');
 				if (count != 119)
 				{
