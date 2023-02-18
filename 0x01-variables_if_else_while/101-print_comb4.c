@@ -9,7 +9,7 @@
 int main(void)
 {
 	int x = 0;
-	int y, k;
+	int y, z;
 	int count = 0;
 
 	while (x <= 7)
