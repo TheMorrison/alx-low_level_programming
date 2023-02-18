@@ -23,7 +23,7 @@ int main(void)
 				putchar(x + '0');
 				putchar(y + '0');
 				putchar(z + '0');
-				if (count != 119)
+				if (count != 118)
 				{
 					putchar(',');
 					putchar(' ');
