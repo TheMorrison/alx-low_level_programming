@@ -10,7 +10,7 @@ int main(void)
 {
 	int x, y, z;
 
-	for (x = 0; x < 8; z++)
+	for (x = 0; x < 8; x++)
 	{
 		for (y = x + 1; y < 9; y++)
 		{
