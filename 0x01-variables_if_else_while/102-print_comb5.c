@@ -9,29 +9,29 @@
 
 int main(void)
 {
-	int x = 0;
-	int y;
+	int i = 0;
+	int j;
 	int count = 0;
 
-	while (x <= 98)
+	while (i <= 98)
 	{
-		y = x + 1;
-		while (y <= 99)
+		j = i + 1;
+		while (j <= 99)
 		{
-			putchar((x/ 10) + '0');
-			putchar((x % 10) + '0');
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
 			putchar(' ');
-			putchar((y / 10) + '0');
-			putchar((y % 10) + '0');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
 			if (count != 4949)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			y++;
+			j++;
 			count++;
 		}
-		x++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
