@@ -8,32 +8,28 @@
 
 int main(void)
 {
-	int x = 0;
-	int y, z;
-	int count = 0;
+	int digit1, digit2, digit3;
 
-	while (x <= 7)
+	for (digit1 = 0; digit1 < 8; digit1++)
 	{
-		y = x + 1;
-		while (y <= 8)
+		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 		{
-			z = y + 1;
-			while (z <= 9)
+			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 			{
-				putchar(x + '0');
-				putchar(y + '0');
-				putchar(z + '0');
-				if (count != 118)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				z++;
+				putchar((digit1 % 10) + '0');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
+
+				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+					continue;
+
+				putchar(',');
+				putchar(' ');
 			}
-			y++;
 		}
-		x++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
